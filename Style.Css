@@ -1,0 +1,90 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d6ccc2;
+    color: #333;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+.products-section{
+    flex: 3;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.products-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 70px;
+}
+.product-card{
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.product-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.product-image{
+    height: 150px;
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position: center;
+}
+.waffle-image{
+    background-image: url('img/fruity-waffles.jpg');
+}
+.brulee-image{
+    background-image: url('img/Brûlée.jpg');
+}
+.macaron-image{
+    background-image: url('img/Macarons.jpg');
+}
+.tiramisu-image{
+    background-image: url('/img/Tiramisu.jpg');
+}
+.baklava-image{
+    background-image: url('/img/Baklava.jpg');
+}
+.pie-image{
+    background-image: url('img/Lemon-pie.jpg');
+}
+.cake-image{
+    background-image: url('/img/Red-Velvet.jpg');
+}
+.brownie-image{
+    background-image: url('/img/Brownie.jpg');
+}
+.panna-cotta-image{
+    background-image: url('/img/Panna-Cotta.jpg');
+}
+.product-info{
+    padding: 12px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+.product-category{
+    font-size: 0.9em;
+    color: #777;
+}
+.product-name{
+    font-weight: bold;
+    margin-top: 5px;
+    color: #444;
+}
+.product-price{
+    color: #c0392b;
+    margin-top: 5px;
+}
